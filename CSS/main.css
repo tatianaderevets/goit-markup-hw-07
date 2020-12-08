@@ -204,7 +204,6 @@ img {
 }
 
 .button-close {
-  display: flex;
   position: absolute;
   top: 8px;
   right: 8px;
@@ -212,14 +211,22 @@ img {
   height: 30px;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-image: url(../images/Vector.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   border-radius: 50%;
   cursor: pointer;
-  padding: 0;
-  align-items: center;
-  justify-content: center;
+}
+
+.button-close:hover .close-img {
+  fill: #2196f3;
+}
+
+.close-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 11px;
+  height: 11px;
+  fill: #212121;
 }
 
 .backdrop.is-hidden {
@@ -831,6 +838,44 @@ p {
   text-decoration: none;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.income {
+  flex-flow: column;
+  display: inline-block;
+}
+
+.income-title {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-left: 70px;
+  margin-bottom: 20px;
+}
+
+.income .social-links {
+  margin-left: 70px;
+}
+
+.footer-social-links .social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.footer-social-links .social-link + .social-link {
+  margin-left: 10px;
+}
+
+.foot .icon-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.foot .social-icon {
+  fill: #ffffff;
 }
 
 .income {

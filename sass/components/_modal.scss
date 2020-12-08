@@ -14,23 +14,30 @@
 }
 
 .button-close {
-  display: flex;
   position: absolute;
   top: 8px;
   right: 8px;
   width: 30px;
   height: 30px;
-  background-color: #ffffff;
+  background-color: $wite;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-image: url(../images/Vector.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   border-radius: 50%;
   cursor: pointer;
-  padding: 0;
-  align-items: center;
-  justify-content: center;
+
+  &:hover .close-img {
+    fill: $accent-text-first;
+  }
 }
+.close-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 11px;
+  height: 11px;
+  fill: $primary-text-color;
+}
+
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
